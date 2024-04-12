@@ -1,0 +1,26 @@
+body {
+  background-color: #999;
+}
+
+.heading {
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+p {
+  color: red;
+  font-weight: bold;
+}
+
+ul {
+  margin: 100px;
+}
+
+li:nth-of-type(2n) {
+  background-color: antiquewhite;
+}
+
+li:nth-of-type(2n - 1) {
+  background-color: blueviolet;
+}

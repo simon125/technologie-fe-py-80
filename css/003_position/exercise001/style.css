@@ -1,0 +1,28 @@
+body {
+  background-color: paleturquoise;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: cornflowerblue;
+  margin: 5px;
+  border: 1px solid red;
+}
+
+.square-1 {
+  /* position: absolute; */
+  /* top: 50px;
+  left: 50px; */
+}
+/* 
+.square-2 {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.square-3 {
+  position: absolute;
+  margin-left: 400px;
+} */

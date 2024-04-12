@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css"
+    />
+    <style>
+      body {
+        background-color: #eee;
+        padding: 30px;
+      }
+
+      table {
+        background-color: white;
+      }
+
+      .super-div {
+        height: 100px;
+        background-color: red;
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Users</h2>
+    <hr />
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="usersStaticTable">
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>33</td>
+          <td><button class="deleteButton" role="button">&times;</button></td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>Doe</td>
+          <td>23</td>
+          <td><button class="deleteButton" role="button">&times;</button></td>
+        </tr>
+        <tr>
+          <td>Jack</td>
+          <td>Doe</td>
+          <td>13</td>
+          <td><button class="deleteButton" role="button">&times;</button></td>
+        </tr>
+        <tr>
+          <td>Jerry</td>
+          <td>Doe</td>
+          <td>63</td>
+          <td><button class="deleteButton" role="button">&times;</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Dynamic Users</h2>
+
+    <div>
+      <form id="dynamicUserForm">
+        <label for="name">
+          Name
+          <input type="text" id="name" name="name" />
+        </label>
+        <label for="lastname">
+          Last name
+          <input type="text" id="lastname" name="lastname" />
+        </label>
+        <label for="age">
+          Age
+          <input type="text" id="age" name="age" />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <hr />
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="dynamic-users"></tbody>
+    </table>
+    <script src="./app.js"></script>
+  </body>
+</html>

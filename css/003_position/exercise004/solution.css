@@ -1,0 +1,33 @@
+body {
+  background-color: beige;
+  height: 300vh;
+}
+
+header {
+  margin-top: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: red;
+  border: none;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
