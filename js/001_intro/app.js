@@ -78,8 +78,8 @@
  * Zadanie:
  * Utwórz listę/tablicę obiektów typu user niech lista będzie zawierała 3 elementy/obiekty
  *
-//  * rezultat możesz wykonsolować za pomocą console.table(users)
-//  */
+ * rezultat możesz wykonsolować za pomocą console.table(users)
+ */
 
 /**
  * pętle
@@ -151,12 +151,6 @@
  *
  *
  */
-
-// const user3 = {
-//   name: "John",
-//   lastName: "Rambo",
-//   age: 70,
-// };
 
 function getNumbersOfAdultsPerGender() {
   /**
