@@ -12,18 +12,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
+    <!-- <style>
       table,
       th,
       td {
         border: 1px solid black;
         border-collapse: collapse;
       }
-    </style>
+    </style> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
   </head>
   <body>
-    <h2>Listy</h2>
+    <main class="container">
+      <article>
+        <h2>Listy</h2>
+        <h3>Todo lista ordered list + nested unorderd list</h3>
+        <ol>
+          <li>poczucyć się htmla</li>
+          <li>
+            zrobić zakupy (unorder lista)
+            <ul>
+              <li>mleko</li>
+              <li>kawa</li>
+              <li>ciastka</li>
+            </ul>
+          </li>
+          <li>posprzątać</li>
+          <li>odpocząć</li>
+        </ol>
 
-    <h2>Table</h2>
+        <h2>Table</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>23</td>
+              <td>
+                <button>Delete</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Jane Doe</td>
+              <td>20</td>
+              <td>
+                <button>Delete</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Jack Doe</td>
+              <td>33</td>
+              <td>
+                <button>Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </main>
   </body>
 </html>

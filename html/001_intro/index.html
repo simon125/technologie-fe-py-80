@@ -5,7 +5,7 @@
   To jest komentarz, czyli tekst, który jest ignorowany przez przeglądarkę/kompilator itp. 
   Nie bierze on udziału w działaniu programu. Tutaj będę pisał treści zadań, definicje, itp.
  -->
-
+<!-- test -->
 <!--
   Zadanie 1: Otwieranie dokumentu HTML w przeglądarce
 
@@ -29,7 +29,6 @@
     Zadanie 3.
     Napisz dowolne zdanie poniżej i odśwież okno przeglądarki
  -->
-
 <!-- 
     "klocki lego" do budowania stron/aplikacji internetowych - elementy/tagi html
 
@@ -46,21 +45,22 @@
 
     div
     section
+    article
     p
     h1
-    h2
-    h3
-    h4
+    h2   
+    h3   
+    h4   
     h5
     h6
     form
-    br
-    hr
+    br   <--- element jednotagowe
+    hr   <--- element jednotagowe
 
     a
     span
-    img
-    input
+    img   <--- element jednotagowe
+    input   <--- element jednotagowe
     button
     select + option
     textarea
@@ -77,3 +77,40 @@
 <!-- 
     omówienie czym są elementy blokowe a czym są elementy liniowe
  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./about.html">About</a>
+        <a href="https://www.google.com/" target="_blank">Google</a>
+      </nav>
+    </header>
+    <main>
+      <h1>
+        To jest<br />
+        nagłówek H1
+      </h1>
+      <h2>To jest nagłówek h2</h2>
+      <h3>To jest nagłówek h3</h3>
+      <p>to jest paragraf</p>
+      <p>to jest paragraf</p>
+      <p>to jest paragraf</p>
+      to jest tekst er oigjeroi jgeoirjg oierj goie rjgoirjg oirtjgoirjtoi
+      jrthij roihj roitjh oirtjh lirtjhoi rjt ohirjthoijrtoih jrtoih jrtioktóry
+      jest poza jakimkolwiek elemenetem
+      <span>To jest span</span>
+
+      <span>To jest kolejny span</span>
+
+      <span>To jest ostatni span</span>
+      to jest tekst który jest poza jakimkolwiek elemenetem
+
+      <img src="./exercise0/design.png" alt="design do zadania z htmla" />
+    </main>
+  </body>
+</html>

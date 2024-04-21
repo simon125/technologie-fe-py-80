@@ -1,0 +1,26 @@
+.btn {
+  border: none;
+  border-radius: 7px;
+  padding: 8px 18px;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn--submit {
+  background-color: green;
+}
+
+.btn--edit {
+  background-color: blue;
+}
+
+.btn--reset {
+  background-color: red;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,26 @@
+body {
+  background-color: gray;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 200;
+}
+
+.typography {
+  color: red;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+ul {
+  margin: 100px;
+}
+
+li {
+  background-color: blueviolet;
+}
+
+.list-item--white {
+  background-color: aliceblue;
+}

@@ -6,6 +6,9 @@ header {
   background-color: #eee;
   padding: 20px;
   border-bottom: 1px solid #bbb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icon-button {
@@ -32,4 +35,10 @@ header {
   width: 70px;
   height: 70px;
   border-radius: 50%;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }

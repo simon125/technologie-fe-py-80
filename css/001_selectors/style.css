@@ -1,0 +1,40 @@
+/* stylowanie po nazwie/typie elementu */
+h1 {
+  color: red;
+}
+/* stylowanie po klasach - kropka jest bardzo ważna wskazuje na to że to klasa */
+.paragraph-1 {
+  color: green;
+}
+
+/* stylowanie po ID-kach */
+
+#paragraph-2 {
+  color: pink;
+}
+
+input:disabled {
+  background-color: red;
+}
+
+button {
+  cursor: pointer;
+  background-color: aqua;
+}
+
+button:hover {
+  background-color: bisque;
+  color: aqua;
+}
+
+p {
+  color: green;
+}
+
+section p {
+  color: red;
+}
+
+.test .test1 {
+  color: blue;
+}

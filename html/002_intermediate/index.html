@@ -10,11 +10,12 @@
     etc
 
 
-    disabled
     value
     checked
     href
     src
+
+    disabled
     selected
  -->
 
@@ -34,5 +35,75 @@
       <a href="./about.html">About</a>
       <a href="./profile.html">Profile</a>
     </nav>
+    <br />
+    <br />
+    <br />
+    <form>
+      <label>
+        Name
+        <input type="text" maxlength="10" placeholder="Enter your name" />
+      </label>
+      <br />
+      <br />
+      <label for="age">Age</label>
+      <input
+        id="age"
+        type="number"
+        min="0"
+        max="100"
+        placeholder="Enter your age (0-100)"
+      />
+      <label>
+        Password
+        <input
+          required
+          type="password"
+          maxlength="10"
+          placeholder="Enter your name"
+        />
+      </label>
+      <button>Submit</button>
+    </form>
+
+    <br />
+    <br />
+    <label for="cokolwiek">Grecja</label>
+    <input id="cokolwiek" value="grecja" type="checkbox" name="test" checked />
+
+    <label for="">Włochy</label>
+    <input value="włochy" type="checkbox" name="test" />
+
+    <label for="hiszpania">Hiszpania</label>
+    <input id="hiszpania" value="hiszpania" type="checkbox" name="test" />
+    <br />
+    <br />
+    <label>
+      Samolot
+      <input value="samolot" type="radio" name="cokolwiek" />
+    </label>
+    <label>
+      Autokar
+      <input value="autokar" type="radio" name="cokolwiek" checked />
+    </label>
+    <label>
+      Samochód
+      <input value="samochod" type="radio" name="cokolwiek" />
+    </label>
+    <br />
+    <br />
+    <input type="file" />
+
+    <br />
+    <br />
+
+    <input type="date" min="10.04.2024" max="" />
+
+    <br />
+    <br />
+    <input type="range" />
+
+    <br />
+    <br />
+    <input type="color" />
   </body>
 </html>

@@ -20,6 +20,23 @@
 
 const divElement = document.createElement("div");
 
+const articleElement = document.createElement("article");
+
+const funkcjaLicząca = () => 5000;
+
+const result = funkcjaLicząca();
+
+// articleElement.innerText = "Hello world!";
+articleElement.innerHTML = `
+    <h2>Hello world ${result}</h2>
+    <input type="text" placeholder="Trelemorele"/>
+`;
+
+/* pobranie elmenetu main */
+const mainElement = document.querySelector("main");
+
+// mainElement.appendChild(articleElement);
+
 /**
  * Pobieranie elementów z dokumentu HTML
  */
@@ -27,6 +44,31 @@ const divElement = document.createElement("div");
 // 1) metoda querySelector
 
 // 2) metoda getElementById
+
+// const firstDeleteButton = document.getElementById("firstDeleteButton");
+
+// firstDeleteButton.classList.add("background-red");
+
+// console.log(firstDeleteButton.classList.contains("deleteButton1"));
+
+// // firstDeleteButton.remove();
+// console.dir(firstDeleteButton);
+// // firstDeleteButton.parentElement.parentElement.remove();
+
+// firstDeleteButton.addEventListener("click", (event) => {
+//   console.log(event);
+//   event.target.parentElement.parentElement.remove();
+// });
+
+const usersStaticTable = document.getElementById("usersStaticTable");
+
+usersStaticTable.addEventListener("click", (event) => {
+  console.log(event.target);
+
+  if (event.target.classList.contains("deleteButton")) {
+    event.target.parentElement.parentElement.remove();
+  }
+});
 
 /**
  * manipulowanie classami - lista klas jest dostępna pod polem classList
@@ -61,3 +103,39 @@ document.body.appendChild(divElement);
 /**
  * Eventy, event listnery - interakcja z UI
  */
+
+const clickMeButton = document.getElementById("clickMeButton");
+
+clickMeButton.addEventListener("click", () => {
+  document.querySelector("#output").innerHTML =
+    "Jakikolwiek tekst albo HTML <h1>TO ja H1</h1>";
+});
+
+const users = [];
+
+const dynamicUserForm = document.getElementById("dynamicUserForm");
+
+dynamicUserForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const formData = new FormData(event.target);
+
+  console.log(Object.fromEntries(formData));
+
+  const newUser = Object.fromEntries(formData);
+
+  users.push(newUser);
+
+  let trs = "";
+
+  users.forEach((user) => {
+    trs =
+      trs +
+      `<tr><td>${user.name}</td><td>${user.lastname}</td><td>${user.age}</td></tr>`;
+  });
+
+  document.getElementById("dynamic-users").innerHTML = trs;
+
+  /**
+   * wysłanie requestu HTTP do backandu
+   */
+});
